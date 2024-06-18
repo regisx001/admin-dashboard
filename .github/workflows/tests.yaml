@@ -4,6 +4,7 @@ name: Test build for production
 on:
   push:
     branch: "master"
+  workflow_dispatch:
 
 jobs:
   build_site:
