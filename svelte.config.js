@@ -14,6 +14,9 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			"@ui": "./src/lib/components/ui/"
+		},
+		prerender: {
+			handleMissingId: "ignore"
 		}
 	}
 };
