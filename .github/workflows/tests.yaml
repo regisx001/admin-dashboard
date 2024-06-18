@@ -16,8 +16,11 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8
+        
 
       - name: Install dependencies
+        env:
+          PUBLIC_PB_URL: ${{ secrets.PUBLIC_PB_URL }}
         run: |
           pnpm install
       - name: build
