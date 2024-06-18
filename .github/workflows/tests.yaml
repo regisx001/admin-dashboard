@@ -23,9 +23,9 @@ jobs:
         env:
           PUBLIC_PB_URL: ${{ env.PUBLIC_PB_URL }}
 
-        run: echo "${{ env.PUBLIC_PB_URL }}
 
         run: |
+          echo "${{ env.PUBLIC_PB_URL }}
           pnpm install
       - name: build
 
