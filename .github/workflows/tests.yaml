@@ -21,7 +21,10 @@ jobs:
 
       - name: Install dependencies
         env:
-          PUBLIC_PB_URL: ${{ secrets.PUBLIC_PB_URL }}
+          PUBLIC_PB_URL: ${{ env.PUBLIC_PB_URL }}
+
+        run: echo "${{ env.PUBLIC_PB_URL }}
+
         run: |
           pnpm install
       - name: build
