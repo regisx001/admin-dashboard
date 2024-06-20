@@ -9,7 +9,7 @@
 	import { GithubLogo } from 'svelte-radix';
 
 	async function loginInWithGithub() {
-		await pb.collection('users').authWithOAuth2({ provider: 'github' });
+		// await pb.collection('users').authWithOAuth2({ provider: 'github' });
 	}
 </script>
 
