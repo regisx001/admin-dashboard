@@ -20,13 +20,14 @@ jobs:
         
 
       - name: Install dependencies
-        env:
-          BASE_PATH: ''
-          PUBLIC_PB_URL: ${{ vars.PUBLIC_PB_URL }}
+        
           
         run: |
           pnpm install
       - name: build
-
+        env:
+          BASE_PATH: ''
+          PUBLIC_PB_URL: ${{ vars.PUBLIC_PB_URL }}
+          
         run: |
           pnpm run build
