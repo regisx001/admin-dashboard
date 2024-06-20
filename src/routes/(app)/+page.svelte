@@ -4,7 +4,10 @@
 	import Moon from 'svelte-radix/Moon.svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { Button } from '$lib/components/ui/button/index.js';
+	import { PUBLIC_PB_URL } from '$env/static/public';
 </script>
+
+{PUBLIC_PB_URL}
 
 <Accordion.Root class="w-full sm:max-w-[70%]">
 	<Accordion.Item value="item-1">
