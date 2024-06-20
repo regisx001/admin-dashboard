@@ -23,7 +23,7 @@ jobs:
       - name: build
         env:
           BASE_PATH: '/admin-dashboard'
-          PUBLIC_PB_URL: ${{ vars.PB_URL }}
+          PUBLIC_PB_URL: ${{ vars.PUBLIC_PB_URL }}
 
         run: |
           pnpm run build
